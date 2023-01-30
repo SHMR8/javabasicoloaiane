@@ -6,6 +6,9 @@ public class Loiane1 {
 
     System.out.print("Digite um número meu nobre:");
     int numero = rd.nextInt();
-    System.out.printf("O número que digitou foi: %d%n",numero);
+    System.out.print("Agora digite outro minha autarquia:");
+    int numero1 = rd.nextInt();
+    int soma = numero1+numero;
+    System.out.printf("A soma dos números digitados foi: %d%n",soma);
     }
 }
