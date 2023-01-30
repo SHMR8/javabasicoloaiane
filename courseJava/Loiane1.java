@@ -3,15 +3,13 @@ import java.util.Scanner;
 public class Loiane1 {
     public static void main(String[] args) {
     Scanner rd = new Scanner(System.in);
-    System.out.println("Este programa imprimirá a sua média anual");
-    int soma = 0;
-    int nota;
-    for (int i = 1; i <=4; i++){
-    System.out.printf("Digite a sua %d nota:",i);
-    nota = rd.nextInt();
-    soma += nota;
+    System.out.println("Informe a área que será pintada");
+    double areaPintada = rd.nextInt();
+    double litro= areaPintada/6.0;
+    if(litro<= 3.6){
+        System.out.println("Você pode comprar apenas um galão de 3.6l. ");
+    } else if (litro<=18.0) {
+        System.out.println("Você pode comprar apenas um galão de 18l. ");
     }
-    int media = soma/4;
-    System.out.printf("Sua média é %d meu caro",media);
     }
 }
