@@ -4,17 +4,18 @@ public class Course {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
         
-        System.out.println("Digite o valor da sua nota: ");
-        int nota = scanner.nextInt();
+        double pop1 = 80000;
+        double pop2 = 2000000;
+        int cont = 0;
         
-        while(nota<0 || nota>10) {
-        	
-        	System.out.println("Digite uma nota válida:");
-        	nota = scanner.nextInt();
+        while (pop1<=pop2) {
+        	pop1 = pop1*0.3;
+        	pop2 = pop2*0.15;
+        	cont +=1;
         }
-        
-     System.out.println("Agora sim, uma nota válida, obrigado!");
      
+        System.out.println(cont);
+        
         scanner.close();
 	}
 
